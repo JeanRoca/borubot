@@ -1,6 +1,7 @@
 import discord
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
+import config
 client = discord.Client()
 
 my_url = "https://www.watchcartoononline.io/anime/boruto-naruto-next-generations-english-subbed"
@@ -84,4 +85,4 @@ def specific_episode(num):
         return msg
 
 
-client.run('token')
+client.run(config.token)
